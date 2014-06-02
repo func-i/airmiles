@@ -1,0 +1,81 @@
+<div id='css_demo'>
+  <h3>Demo</h3>
+
+  <ul class="nav nav-tabs">
+    <li class='active'><a href="#demo_display" data-toggle="tab">Display</a></li>
+    <li><a href="#demo_html" data-toggle="tab">HTML</a></li>
+    <li><a href="#demo_css" data-toggle="tab">CSS</a></li>
+    <li><a href="#demo_scss" data-toggle="tab">SCSS</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane active" id="demo_display">
+      <div class='container'>
+        <h3>This is a title</h3>
+        <p class='demo-p'>
+          This is a paragraph
+        </p>
+        <img src='https://www.airmiles.ca/arrow/webresource/v2/img/logo-card-en.png' />
+        <br />
+        <span class='demo-span'> This is some text in a span with <b>bolding</b></span>
+      </div>
+    </div>
+    <div class="tab-pane" id="demo_html">
+      <code>
+        <xmp>
+          <div class="tab-pane active" id="demo_display">
+            <div class='container'>
+              <h3>This is a title</h3>
+              <p class='demo-p'>
+                This is a paragraph
+              </p>
+              <img src='https://www.airmiles.ca/arrow/webresource/v2/img/logo-card-en.png' />
+              <br />
+              <span class='demo-span'> This is some text in a span with <b>bolding</b></span>
+            </div>
+          </div>
+        </xmp>
+      </code>
+    </div>
+    <div class="tab-pane" id="demo_css">
+      <pre>
+        <xmp>
+          #css_demo #demo_display p {
+            color: blue;
+            font-size: 22px;
+          }
+          #css_demo #demo_display span {
+            font-style: italic;
+          }
+
+          #css_demo #demo_display span b {
+            font-size: 22px;
+          }
+        </xmp>
+      </pre>
+    </div>
+    <div class='tab-pane' id="demo_scss">
+      <pre>
+        <xmp>
+          #css_demo {
+            #demo_display {
+              p {
+                color: blue;
+                font-size: 22px;
+              }
+
+              span {
+                font-style: italic;
+
+                b {
+                  font-size: 22px;
+                }
+              }
+            }
+          }
+        </xmp>
+      </pre>
+    </div>
+  </div>
+</div>

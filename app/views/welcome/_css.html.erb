@@ -1,0 +1,58 @@
+<section id="css">
+  <h1>Cascading Style Sheets (CSS)</h1>
+  <p>
+    A language for describing the look and feel of documents written in a markup language.
+  </p>
+
+  Here is an example of CSS code: <br />
+  <pre>
+    p {
+       font-size: 20px;
+    }
+  </pre>
+
+  <p>
+    This defines the font size for all <b>paragraph</b> tags.
+  </p>
+
+  <h3>CSS attributes</h3>
+  <p>
+    HTML tags can have many of their attributes styled.
+    Examples:
+    <dl class="dl-horizontal">
+      <dt>font-size</dt>
+      <dd>Change the size of the font for this element and all it's children</dd>
+
+      <dt>width</dt>
+      <dd>If the element allows it, set the width.  Supports different units.  Such as: 'px' or '%'</dd>
+
+      <dt>height</dt>
+      <dd>If the element allows it, set the height.  Supports different units.  Such as: 'px' or '%'</dd>
+
+      <dt>background-color</dt>
+      <dd>Change the background color.  HEX code or RGB</dd>
+
+      <dt>color</dt>
+      <dd>Font color for this element and it's children.  HEX or RGB</dd>
+
+      <dt>Position</dt>
+      <dd>How the element is displayed.  Certain position types allow the element to be moved using x,y coordinates.</dd>
+
+      <dt>padding</dt>
+      <dd>The spacing from the edges inside a container.</dd>
+
+      <dt>margin</dt>
+      <dd>The space between containers</dd>
+    </dl>
+  </p>
+
+  <h3>Syntactically Awesome Stylesheets</h3>
+
+  <p>
+    Sass is a stylesheet sugar language.
+    It is processed by a program and vanilla CSS is created.  It's purpose is to simplify the ugly parts of CSS as well as
+    add extra functionality such reusable code.  (variables and functions)
+  </p>
+
+  <%= render "css_demo" %>
+</section>
