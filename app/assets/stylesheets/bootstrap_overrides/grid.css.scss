@@ -1,0 +1,11 @@
+.show-grid {
+  margin-bottom: 10px;
+
+  [class^=col-] {
+    padding: 10px;
+    background-color: #03a8ab;
+    border: 1px solid #ffbd1b;
+    text-align: center;
+    color: white;
+  }
+}
