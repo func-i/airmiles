@@ -31,6 +31,15 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :test do
+  gem 'rspec-rails'
+  gem 'cucumber-rails', :require => false
+  gem 'selenium-webdriver'
+
+  # database_cleaner is not required, but highly recommended
+  gem 'database_cleaner'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

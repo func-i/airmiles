@@ -1,6 +1,6 @@
 class WelcomeController < ApplicationController
   def add
-    @answer = params[:left].to_i + params[:right].to_i
+    @answer = params[:left] + params[:right]
     render :index
   end
 end
