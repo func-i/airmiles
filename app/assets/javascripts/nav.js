@@ -1,7 +1,6 @@
 $(function() {
   $('.nav-scroll').click(function(e){
     e.preventDefault();
-    e.stopPropagation();
     scrollToElement(this, $(this).find('a').attr('href'));
   });
 
