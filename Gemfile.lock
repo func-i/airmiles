@@ -157,6 +157,8 @@ GEM
     uglifier (2.5.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    watir-webdriver (0.6.4)
+      selenium-webdriver (>= 2.18.0)
     websocket (1.0.7)
     xpath (2.0.0)
       nokogiri (~> 1.3)
@@ -177,5 +179,5 @@ DEPENDENCIES
   rspec-rails
   sass-rails (~> 4.0.2)
   sdoc
-  selenium-webdriver
   uglifier (>= 1.3.0)
+  watir-webdriver

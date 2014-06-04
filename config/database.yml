@@ -15,7 +15,7 @@ development:
 # Do not set this db to the same as development or production.
 test: &test
   adapter: postgresql
-  database: airmiles_dev
+  database: airmiles_test
   username: postgres
   pool: 5
   timeout: 5000
