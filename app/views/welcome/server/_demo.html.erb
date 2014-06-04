@@ -1,0 +1,54 @@
+<h3 id="server_demo">Server side demo</h3>
+<div class='row'>
+  <div class='col-md-5'>
+    <div class='well'>
+      <h4>Simple Calculator</h4>
+      <%= form_tag '/welcome/add#server_demo' do %>
+        <%= text_field_tag :left %> + <%= text_field_tag :right %>
+        <br />
+        <br />
+        <%= submit_tag "Add", class: 'btn btn-block btn-success' %>
+      <% end %>
+      <% if @answer %>
+        <h3>The answer is <%= @answer %></h3>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<h3>A more complicated example</h3>
+
+<ul class="nav nav-tabs">
+  <li class='active'><a href="#demo_server_display" data-toggle="tab">Display</a></li>
+  <li><a href="#demo_server_html" data-toggle="tab">Embedded HTML</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="demo_server_display">
+    <div class='container'>
+      <table class='table'>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Weight (lbs)</th>
+            <th>Height (in)</th>
+            <th>BMI</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @people.each do |person| %>
+            <tr>
+              <td><%= person.name %></td>
+              <td><%= person.weight %></td>
+              <td><%= person.height %></td>
+              <td><%= (person.weight / (person.height.to_f ** 2) * 703).round(2) %></td>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="tab-pane" id="demo_server_html">
+    <script src="https://gist.github.com/Sailias/09b37fec5246f82632ee.js"></script>
+  </div>
+</div>
